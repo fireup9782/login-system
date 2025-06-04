@@ -1,3 +1,5 @@
+##Note this should not be under templates but idk how, there should also be a virtual environment for this to work
+
 import pymongo
 
 import datetime
@@ -16,7 +18,7 @@ app = Flask('loginsystem')
 
 app.secret_key = "123456789"
 
-uri= "mongodb+srv://lauvacat:Ow42onZpO4fqruxj@cluster0.7fifn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri= "mongodb+srv://lauvacat:...@cluster0.7fifn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 client = pymongo.MongoClient(uri, tls=True, tlsAllowInvalidCertificates=True)
 db = client.loginsystem
